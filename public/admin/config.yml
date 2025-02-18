@@ -1,0 +1,15 @@
+backend:
+  name: test-repo  # Esto deshabilita la autenticación
+
+media_folder: "public/uploads"  
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "src/content/pages"  # Aquí guardará el contenido
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }
+
